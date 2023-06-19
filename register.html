@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/register.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+    <title> Hotel - Register </title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="#">TOSHKA HOTEL</a></h1>
+            <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="gallery.html">GALLERY</a></li>
+            <li><a href="booking.php">BOOKING</a><li>
+            <li><a href="#">REVIEW</a></li>
+            <li><a class = current href="login.php"">LOGIN</a></li>
+            </ul>
+        </div>
+        </nav>
+    </header>
+    
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="./php/register.php" method="post">
+                    <h2>Register</h2>
+                    <div class="inputbox">
+                        <ion-icon name="albums-outline"></ion-icon>
+                        <input type="text" name="id" id="" required>
+                        <label for="">ID</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" name="fname" id="" required>
+                        <label for="">First Name</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <input type="text" name="sname" id="" required>
+                        <label for="">Surname</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" name="email" id="" required>
+                        <label for="">Email</label>
+                    </div>
+                    <div class="inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" name="password" id="" required>
+                        <label for="">Password</label>
+                    </div>
+                    
+                    <button>Register</button>
+                    <div class="register">
+                        <p>Already have an account <a href="login.php">Log in</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div>
+        <footer id="main-footer">
+            <p>© 2023 Copyright: TOSHKA GROUP </p>
+        </footer>
+    </div>
+</body>
+</html>

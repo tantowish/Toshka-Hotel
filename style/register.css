@@ -1,0 +1,295 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+  
+  /* Navbar */
+  #navbar {
+    background: #333;
+    color: #fff;
+    overflow: auto;
+  }
+  
+  #navbar a {
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  #navbar h1 {
+    float: left;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    float: right;
+    padding: 0px 20px;
+  }
+  
+  #navbar ul li {
+    float: left;
+  }
+  
+  #navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #navbar ul li a:hover, 
+  #navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+  }
+
+/* =========== ROOM  =========== */
+  
+  body {
+    font-family: 'Raleway',sans-serif;
+    /* background:#2c2c38; */
+    color:#000000;
+    line-height:1.8;
+  }
+
+  html, body {
+    line-height: 1.7em;
+  }
+  
+  
+  
+  h1, h2, h3{
+    padding-bottom: 20px;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  p {
+    margin: 10px 0;
+  }
+  
+  /* utility */
+  .container {
+    margin: auto;
+    max-width: 1100px;
+    overflow:auto;
+    padding: 0 20px;
+    
+  }
+
+  section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    width: 100%;
+    background: green;
+    background:
+    linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+    ),
+    url("../img/pexels-andrea-piacquadio-3768095.jpg")no-repeat center center/cover;
+  }
+
+  .form-box{
+    position: relative;
+    width: 420px;
+    height: 620px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .form-box h2{
+    font-size: 28px;
+    color: #fff;
+    text-align: center;
+  }
+  .inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white;
+  }
+
+  .inputbox label {
+    position: absolute;
+    top:50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+input:focus ~ label,
+input:valid ~ label{
+    top:-5px;
+}
+  .inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+    color:#fff;
+  }
+
+  .inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 18px;
+    top: 20px;
+  }
+
+  .forget{
+    margin: -15px 0 15px;
+    font-size: 15px;
+    color: white;
+    justify-content: center;
+  }
+
+  .forget label input{
+    margin-right: 3px;
+  }
+
+  .forget label a{
+    color: #fff;
+    float: right;
+  }
+  .forget label a:hover{
+    text-decoration: underline;
+  }
+
+  button{
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .register{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+  }
+  .register p a{
+    color: #fff;
+    font-weight: 600;
+  }
+  .register p a:hover{
+    text-decoration: underline;
+  }
+
+    /* footer */
+#main-footer{
+    font-size: 12px;
+    text-align:center;
+    color: #fff;
+    background:#333;
+    /* padding: 7px; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px){
+    #navbar{
+      height: 50px;
+    }
+    #navbar a{
+      padding: 6px;
+      font-size: 8px;
+    }
+    #navbar h1 {
+      padding-top: 10px;
+    }
+    #navbar ul {
+      padding: 0px 14px;
+    }
+    #navbar ul li a {
+      padding: 14px;
+    }
+    .container {
+        max-width: 600px;
+        padding: 0 8px;
+      }
+
+    html, body {
+    line-height: 1.7em;
+    }
+    
+    a{
+    color: #333;
+    text-decoration: none;
+    }
+    
+    h1, h2, h3{
+    padding-bottom: 20px;
+    }
+    
+    p {
+    margin: 10px 0;
+    }
+
+    section{
+        min-height: 95vh;
+    }
+    .form-box{
+        width: 378px;
+        height: 540px;
+    }
+    .form-box h2{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+    .inputbox{
+        margin: 28px 0;
+        width: 280px;
+    }
+    .inputbox label{
+        left: 3px;
+        font-size: 12px;
+    }
+    .inputbox input{
+        height: 35px;
+        font-size: 12px;
+        padding: 0 25px 0 3px;
+    }
+    .inputbox ion-icon{
+        right: 8px;
+        font-size: 14px;
+        top: 12px;
+    }
+    button{
+        width: 100%;
+        height: 25px;
+        border-radius: 30px;
+        font-size: 12px;
+    }
+    .register{
+        font-size: 10px;
+        margin: 15px 0 10px;
+
+    }
+    #main-footer{
+        font-size: 8px;
+    }
+}

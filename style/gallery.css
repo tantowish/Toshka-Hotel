@@ -1,0 +1,281 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+  }
+
+*:after, *:before {
+    padding:0;
+    margin:0;
+  }
+  
+  /* Navbar */
+  #navbar {
+    background: #333;
+    font-family: 'Raleway',sans-serif;
+    color: #fff;
+    overflow: auto;
+  }
+  
+  #navbar a {
+    color: #fff;
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  #navbar h1 {
+    float: left;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    float: right;
+    padding: 0px 20px;
+  }
+  
+  #navbar ul li {
+    float: left;
+  }
+  
+  #navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #navbar ul li a:hover, 
+  #navbar ul li a.current {
+    background: #444;
+    color: #f7c08a;
+  }
+  
+  body {
+    font-family: 'Raleway',sans-serif;
+    /* background:#2c2c38; */
+    color:#fff;
+    line-height:1.8;
+  }
+
+  /* main styling */
+  html, body {
+    line-height: 1.7em;
+  }
+  
+  a{
+    color: #333;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3{
+    padding-bottom: 20px;
+  }
+  
+  p {
+    margin: 10px 0;
+  }
+
+
+  .container {
+    margin: auto;
+    max-width: 1100px;
+    overflow:auto;
+    padding: 0 20px;
+    font-family: 'Raleway',sans-serif;
+  }
+
+  .body-slider{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: 
+    linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+    ),
+    url("../img/pexels-engin-akyurt-3011575.jpg") no-repeat
+    center center/cover;
+  }
+
+  .slider{
+    width: 864px;
+    height: 486px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 2.5px white;
+
+  }
+
+  .slides{
+    width: 500%;
+    height: 486px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  .slide img{
+    width: 864px;
+    height: 486px;
+  }
+
+  .navigation-manual{
+    position: absolute;
+    width: 864px;
+    display: flex;
+    margin-top: -40px;
+    justify-content: center;
+  }
+  .manual-btn{
+    border: 1px solid  rgb(255, 255, 255);
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  .manual-btn:not(:last-child){
+    margin-right: 25px;
+  }
+  .manual-btn:hover{
+    background: #fff;
+  }
+
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  #radio5:checked ~ .first{
+    margin-left: -80%;
+  }
+
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 864px;
+    justify-content: center;
+    margin-top: 446px;
+    }
+
+  .navigation-auto div{
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+
+  .navigation-auto div:not(:last-child){
+    margin-right: 25px;
+  }
+
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: white;
+  }
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: white;
+  }
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: white;
+  }
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: white;
+  }
+  #radio5:checked ~ .navigation-auto .auto-btn5{
+    background: white;
+  }
+
+
+
+
+
+
+
+
+
+  
+  /* footer */
+  #main-footer{
+    font-size: 12px;
+    text-align:center;
+    color: #fff;
+    background:#333;
+    /* padding: 7px; */
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+
+  @media (max-width: 768px){
+    #navbar{
+      height: 50px;
+    }
+    #navbar a{
+      padding: 6px;
+      font-size: 8px;
+    }
+    #navbar h1 {
+      padding-top: 10px;
+    }
+    #navbar ul {
+      padding: 0px 14px;
+    }
+    #navbar ul li a {
+      padding: 14px;
+    }
+    .container {
+      max-width: 600px;
+      padding: 0 8px;
+    }
+    .slider{
+      width: 480px;
+      height: 270px;
+    }
+    .slides{
+      height: 270px;
+    }
+    .slide img{
+      width: 480px;
+      height: 270px;
+    }
+    .navigation-manual{
+      width: 480px;
+      margin-top: -20px;
+    }
+    .manual-btn{
+      padding: 2.5px;
+    }
+    .manual-btn:not(:last-child){
+      margin-right: 15px;
+    }
+    .navigation-auto{
+      width: 480px;
+      margin-top: 250px;
+    }
+    .navigation-auto div{
+      padding: 2.5px;
+    }
+    .navigation-auto div:not(:last-child){
+      margin-right: 15px;
+    }
+    #main-footer{
+      font-size: 8px;
+    }
+  }
